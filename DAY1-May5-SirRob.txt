@@ -249,7 +249,7 @@ telephony-service
 ephone-dn 1
   number ~~11
 ephone-dn 2
-  number ~~22
+  number ~~
 ephone-dn 3
   number ~~33
 ephone-dn 4
@@ -313,9 +313,9 @@ dial-peer voice 21 Voip
  destination-pattern 21..
  session target ipv4:10.21.100.8
  codec g711ULAW
-dial-peer voice 22 Voip
- destination-pattern 22..
- session target ipv4:10.22.100.8
+dial-peer voice  Voip
+ destination-pattern ..
+ session target ipv4:10..100.8
  codec g711ULAW
 dial-peer voice 31 Voip
  destination-pattern 31..
@@ -436,7 +436,7 @@ conf t
  ip route 10.11.0.0 255.255.0.0 200.0.0.11
  NO ip route 10.~~.0.0 255.255.0.0 200.0.0.~~
  ip route 10.21.0.0 255.255.0.0 200.0.0.21
- ip route 10.22.0.0 255.255.0.0 200.0.0.22
+ ip route 10..0.0 255.255.0.0 200.0.0.
  ip route 10.31.0.0 255.255.0.0 200.0.0.31
  ip route 10.32.0.0 255.255.0.0 200.0.0.32
  ip route 10.41.0.0 255.255.0.0 200.0.0.41
@@ -537,7 +537,7 @@ OPEN CMD                 DNS
 4. ping 200.0.0.M
 5. ping 200.0.0.K
 6. ping 10.21.1.10
-   ping 10.22.1.10
+   ping 10..1.10
    ping 10.31.1.10
    ping 10.32.1.10
    ping 10.41.1.10
